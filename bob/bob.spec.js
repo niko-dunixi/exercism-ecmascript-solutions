@@ -53,37 +53,37 @@ describe('Bob', () => {
     expect(result).toEqual('Whoa, chill out!');
   });
 
-  xtest('shouting with umlauts', () => {
+  test('shouting with umlauts', () => {
     const result = bob.hey('\xdcML\xc4\xdcTS!');
     expect(result).toEqual('Whoa, chill out!');
   });
 
-  xtest('calmly speaking about umlauts', () => {
+  test('calmly speaking about umlauts', () => {
     const result = bob.hey('\xfcML\xe4\xdcTS');
     expect(result).toEqual('Whatever.');
   });
 
-  xtest('shouting with no exclamation mark', () => {
+  test('shouting with no exclamation mark', () => {
     const result = bob.hey('I HATE YOU');
     expect(result).toEqual('Whoa, chill out!');
   });
 
-  xtest('statement containing question mark', () => {
+  test('statement containing question mark', () => {
     const result = bob.hey('Ending with a ? means a question.');
     expect(result).toEqual('Whatever.');
   });
 
-  xtest('prattling on', () => {
+  test('prattling on', () => {
     const result = bob.hey('Wait! Hang on.  Are you going to be OK?');
     expect(result).toEqual('Sure.');
   });
 
-  xtest('silence', () => {
+  test('silence', () => {
     const result = bob.hey('');
     expect(result).toEqual('Fine. Be that way!');
   });
 
-  xtest('prolonged silence', () => {
+  test('prolonged silence', () => {
     const result = bob.hey('   ');
     expect(result).toEqual('Fine. Be that way!');
   });
