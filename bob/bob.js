@@ -2,10 +2,14 @@
 
 class Bob {
   hey(message) {
-    if (message.match(/[A-Z]/) && !message.match(/[a-z]/)) {
-      return "Whoa, chill out!";
+    // Note, we need to include unicode ranges to get this to work:
+    //  https://stackoverflow.com/a/22017800/1478636
+    if (message.match(/[A-Z\u00c4-\u00df]/u) && !message.match(/[a-z\u00e4-\u00fc]/u)) {
+      return 'Whoa, chill out!';
     } else if (message.match(/\?$/)) {
-      return "Sure."
+      return 'Sure.';
+    } else if (message.match(/^\s*$/)) {
+      return 'Fine. Be that way!'
     }
     return 'Whatever.';
   }
