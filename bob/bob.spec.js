@@ -33,22 +33,22 @@ describe('Bob', () => {
     expect(result).toEqual('Whoa, chill out!');
   });
 
-  xtest('shouting numbers', () => {
+  test('shouting numbers', () => {
     const result = bob.hey('1, 2, 3 GO!');
     expect(result).toEqual('Whoa, chill out!');
   });
 
-  xtest('only numbers', () => {
+  test('only numbers', () => {
     const result = bob.hey('1, 2, 3');
     expect(result).toEqual('Whatever.');
   });
 
-  xtest('question with only numbers', () => {
+  test('question with only numbers', () => {
     const result = bob.hey('4?');
     expect(result).toEqual('Sure.');
   });
 
-  xtest('shouting with special characters', () => {
+  test('shouting with special characters', () => {
     const result = bob.hey('ZOMG THE %^*@#$(*^ ZOMBIES ARE COMING!!11!!1!');
     expect(result).toEqual('Whoa, chill out!');
   });
