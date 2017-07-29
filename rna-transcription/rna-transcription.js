@@ -11,6 +11,8 @@ class Transcriptor {
         rna += 'A';
       } else if (current === 'A') {
         rna += 'U';
+      } else {
+        throw 'Invalid input DNA.';
       }
     }
     return rna;
