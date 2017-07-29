@@ -7,11 +7,11 @@ class Hamming {
       throw 'DNA strands must be of equal length.';
     }
 
-    var distance = 0;
+    let distance = 0;
 
-    for (var i = 0, length = a.length; i < length; i++) {
-      var first = a.charAt(i);
-      var second = b.charAt(i);
+    for (let i = 0, length = a.length; i < length; i++) {
+      let first = a.charAt(i);
+      let second = b.charAt(i);
       if (first != second) {
         distance++;
       }
