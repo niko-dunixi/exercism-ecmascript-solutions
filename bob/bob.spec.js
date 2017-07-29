@@ -18,17 +18,17 @@ describe('Bob', () => {
     expect(result).toEqual('Sure.');
   });
 
-  xtest('talking forcefully', () => {
+  test('talking forcefully', () => {
     const result = bob.hey("Let's go make out behind the gym!");
     expect(result).toEqual('Whatever.');
   });
 
-  xtest('using acronyms in regular speech', () => {
+  test('using acronyms in regular speech', () => {
     const result = bob.hey("It's OK if you don't want to go to the DMV.");
     expect(result).toEqual('Whatever.');
   });
 
-  xtest('forceful questions', () => {
+  test('forceful questions', () => {
     const result = bob.hey('WHAT THE HELL WERE YOU THINKING?');
     expect(result).toEqual('Whoa, chill out!');
   });

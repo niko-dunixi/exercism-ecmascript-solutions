@@ -2,10 +2,10 @@
 
 class Bob {
   hey(message) {
-    if (message.match(/\?$/)) {
-      return "Sure."
-    } else if (message.match(/[A-Z]/) && !message.match(/[a-z]/)) {
+    if (message.match(/[A-Z]/) && !message.match(/[a-z]/)) {
       return "Whoa, chill out!";
+    } else if (message.match(/\?$/)) {
+      return "Sure."
     }
     return 'Whatever.';
   }
