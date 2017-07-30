@@ -1,6 +1,6 @@
 class Words {
   count(phrase) {
-    let words = phrase.split(/\s+/)
+    let words = phrase.trim().toLowerCase().split(/\s+/)
     let result = {};
     for (let word of words) {
       if (result[word]) {
