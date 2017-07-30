@@ -8,47 +8,47 @@ describe('Exercise - Perfect Numbers', () => {
       expect(perfectNumbers.classify(6)).toEqual('perfect');
     });
 
-    xtest('Medium perfect number is classified correctly', () => {
+    test('Medium perfect number is classified correctly', () => {
       expect(perfectNumbers.classify(28)).toEqual('perfect');
     });
 
-    xtest('Large perfect number is classified correctly', () => {
+    test('Large perfect number is classified correctly', () => {
       expect(perfectNumbers.classify(33550336)).toEqual('perfect');
     });
   });
 
   describe('Abundant Numbers', () => {
-    xtest('Smallest abundant number is classified correctly', () => {
+    test('Smallest abundant number is classified correctly', () => {
       expect(perfectNumbers.classify(12)).toEqual('abundant');
     });
 
-    xtest('Medium abundant number is classified correctly', () => {
+    test('Medium abundant number is classified correctly', () => {
       expect(perfectNumbers.classify(30)).toEqual('abundant');
     });
 
-    xtest('Large abundant number is classified correctly', () => {
+    test('Large abundant number is classified correctly', () => {
       expect(perfectNumbers.classify(33550335)).toEqual('abundant');
     });
   });
 
   describe('Deficient Numbers', () => {
-    xtest('Smallest prime deficient number is classified correctly', () => {
+    test('Smallest prime deficient number is classified correctly', () => {
       expect(perfectNumbers.classify(2)).toEqual('deficient');
     });
 
-    xtest('Smallest non-prime deficient number is classified correctly', () => {
+    test('Smallest non-prime deficient number is classified correctly', () => {
       expect(perfectNumbers.classify(4)).toEqual('deficient');
     });
 
-    xtest('Medium deficient number is classified correctly', () => {
+    test('Medium deficient number is classified correctly', () => {
       expect(perfectNumbers.classify(32)).toEqual('deficient');
     });
 
-    xtest('Large deficient number is classified correctly', () => {
+    test('Large deficient number is classified correctly', () => {
       expect(perfectNumbers.classify(33550337)).toEqual('deficient');
     });
 
-    xtest('Edge case (no factors other than itself) is classified correctly', () => {
+    test('Edge case (no factors other than itself) is classified correctly', () => {
       expect(perfectNumbers.classify(1)).toEqual('deficient');
     });
   });
