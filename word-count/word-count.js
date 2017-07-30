@@ -3,7 +3,7 @@ class Words {
     let words = phrase.trim().toLowerCase().split(/\s+/)
     let result = {};
     for (let word of words) {
-      if (result[word]) {
+      if (word in result) {
         result[word]++;
       } else {
         result[word] = 1;
