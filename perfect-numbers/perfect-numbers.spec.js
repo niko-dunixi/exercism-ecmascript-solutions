@@ -54,12 +54,12 @@ describe('Exercise - Perfect Numbers', () => {
   });
 
   describe('Invalid Inputs', () => {
-    xtest('Zero is rejected (not a natural number)', () => {
+    test('Zero is rejected (not a natural number)', () => {
       expect(() => perfectNumbers.classify(0))
         .toThrow('Classification is only possible for natural numbers.');
     });
 
-    xtest('Negative integer is rejected (not a natural number)', () => {
+    test('Negative integer is rejected (not a natural number)', () => {
       expect(() => perfectNumbers.classify(-1))
         .toThrow('Classification is only possible for natural numbers.');
     });
