@@ -5,7 +5,9 @@ class Words {
     // We can't create a dict literal with curly brackets.
     // This results in a NaN for the string 'constructor'.
     // I don't know why, but this solution works.
-    // https://mcculloughwebservices.com/2015/05/12/exercism-word-count/
+    //    https://mcculloughwebservices.com/2015/05/12/exercism-word-count/
+    // This gives /some/ incite.
+    //    http://www.htmlgoodies.com/beyond/javascript/object.create-the-new-way-to-create-objects-in-javascript.html
     let result = Object.create(null);
 
     for (let word of words) {
